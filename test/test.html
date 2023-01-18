@@ -1,0 +1,41 @@
+<html>
+<link rel="stylesheet" href="mystyle.css">
+
+<div class="row">
+
+	<div class="column">
+		<div id="field">
+			<span id="sprite"></span>
+		</div>
+	</div>
+
+	<div class="column">
+		<button id="ub" class="moves" onclick="up(); enemy();">up</button>
+		<Br>
+		<button id="lb" class="moves"  onclick="left(); enemy();">left</button>
+		<button id="rb" class="moves"  onclick="right(); enemy();">right</button>
+		<br>
+		<button id="db" class="moves"  onclick="down(); enemy();">down</button>
+	<div id="enemy" style="display:none">
+		Enemy Found
+		<img id="poring" class ="enemy" style="display:none" src="poring.png">
+		<button id="lb" onclick="run()">Run!</button>
+		<button id="lb" onclick="fight()">Fight!</button>
+	</div>
+</div>
+
+<div id="fight" style="display:none">
+	<div class="row">
+		<div class="column">
+			<span id="sprite"></span>
+			<button id="attack1" class="moves" onclick="attack();">attack</button>
+		
+		</div>
+		<div class="column">
+			<img id="poring" class ="enemy"  src="poring.png">
+			<input id="e-hp" type="text" name=""  value="100">
+		</div>
+</div>
+
+<script src="test.js"></script>
+</html>

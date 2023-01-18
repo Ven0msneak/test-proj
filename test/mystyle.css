@@ -1,0 +1,68 @@
+body
+{
+	margin: 0;
+}
+
+
+#field
+{
+	width: 600px;
+	height:480px;
+	background-color: #2D73AE;
+	left:1px;
+	margin: auto;
+}
+
+#fight
+{
+	width: 600px;
+	height:480px;
+	background-color: white;
+	left:1px;
+	margin: auto;
+	position: fixed;
+	LEFT: 142PX;
+    TOP: 10px;
+    border: solid 1px #333;
+
+}
+
+#sprite
+{
+	height: 20px;
+	width: 20px;
+	background-color: black;
+	position: relative;
+	display: block;
+
+}
+
+#enemy
+{
+	width: 300px;
+	height: 200px;
+	background-color: white;
+	border: black solid 1px;
+	padding: 20px;
+}
+
+.enemy
+{
+	height: 100px;
+	width: 100px;
+	object-fit: contain;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
